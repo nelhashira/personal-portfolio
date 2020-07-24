@@ -4,105 +4,215 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Personal Portfolio</title>
-      <link rel="stylesheet" href="style.css" />
+
+      <!-- FOntawesome kit -->
+      <script
+         src="https://kit.fontawesome.com/c8c47f29f6.js"
+         crossorigin="anonymous"
+      ></script>
+      <!-- CSS Stylesheet -->
+      <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
-      <div class="container">
-         <header>
-            <nav class="navbar">
-               <a href="#">LOGO</a>
-               <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Work</a></li>
-                  <li><a href="#">Contact</a></li>
+      <header>
+         <div class="container">
+            <nav>
+               <div class="nav-brand">
+                  <i>jPopuli</i>
+               </div>
+               <div class="nav-menu open" id="toggle-open">
+                  <i class="fa fa-bars"></i>
+               </div>
+               <ul class="nav-bar-links" id="nav-bar-open">
+                  <div class="nav-menu close" id="toggle-close">
+                     <i class="fa fa-times"></i>
+                  </div>
+                  <!-- Link 1 -->
+                  <li class="nav-item">
+                     <a href="#" class="nav-link current">Home</a>
+                  </li>
+                  <!-- Link 2 -->
+                  <li class="nav-item">
+                     <a href="#about-section" class="nav-link">About</a>
+                  </li>
+                  <!-- Link 3 -->
+                  <li class="nav-item">
+                     <a href="#projects-section" class="nav-link">Projects</a>
+                  </li>
+                  <!-- Link 4 -->
+                  <li class="nav-item">
+                     <a href="#contact-section" class="nav-link">Contact</a>
+                  </li>
                </ul>
             </nav>
-         </header>
-         <div class="showcase">
-            <h1>Hi! I am Nel Hashira</h1>
-            <p>a computer science student</p>
          </div>
-         <main class="main">
-            <h2>Sample <span>Projects</span></h2>
-            <div class="grid">
-               <!-- Project 1 -->
-               <div class="project-item">
-                  <iframe
-                     src="https://codepen.io/nelhashira/full/dyGqYwZ"
-                     frameborder="0"
-                  ></iframe>
-                  <a
-                     href="https://codepen.io/nelhashira/full/dyGqYwZ"
-                     target="_blank"
-                     >View Full Page</a
-                  >
+      </header>
+
+      <main>
+         <!-- Section - Introduction for Self -->
+         <section class="intro">
+            <div class="container">
+               <div class="intro-message">
+                  <h1>
+                     Hello, I'm
+                     <span>Nel Populi</span><br />I design & build web
+                     applications
+                  </h1>
                </div>
-               <!-- Project 2 -->
-               <div class="project-item">
-                  <iframe
-                     src="https://codepen.io/nelhashira/full/bGExoaR"
-                     frameborder="0"
-                  ></iframe>
-                  <a
-                     href="https://codepen.io/nelhashira/full/bGExoaR"
-                     target="_blank"
-                     >View Full Page</a
-                  >
-               </div>
-               <!-- Project 3 -->
-               <div class="project-item">
-                  <iframe
-                     src="https://codepen.io/nelhashira/full/XWXPZXY"
-                     frameborder="0"
-                  ></iframe>
-                  <a
-                     href="https://codepen.io/nelhashira/full/XWXPZXY"
-                     target="_blank"
-                     >View Full Page</a
-                  >
-               </div>
-               <!-- Project 4 -->
-               <div class="project-item">
-                  <iframe
-                     src="https://codepen.io/nelhashira/full/oNbPqZY"
-                     frameborder="0"
-                  ></iframe>
-                  <a
-                     href="https://codepen.io/nelhashira/full/oNbPqZY"
-                     target="_blank"
-                     >View Full Page</a
-                  >
+               <div class="intro-btn">
+                  <a href="#projects-section" class="btn">See my projects</a>
                </div>
             </div>
-         </main>
-         <!-- section -->
-         <section class="contact">
-            <h2>Let's work <span>Together</span></h2>
-            <form action="" class="form-group">
-               <input type="text" name="" id="" placeholder="Enter your name" />
-               <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Enter your email"
-               />
-               <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Say something here..."
-               ></textarea>
-               <input type="submit" value="Submit" />
-            </form>
          </section>
-         <!-- Footer -->
-         <footer>
-            <p>
-               **This is just a fake portfolio. All the projects and contact
-               details given are not real.
-            </p>
-         </footer>
-      </div>
+
+         <!-- About Me section -->
+         <section class="about" id="about-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2>About</h2>
+               </div>
+               <div class="about-grid">
+                  <div class="about-info">
+                     <div class="about-img">
+                        <img src="images/educator.png" alt="" />
+                     </div>
+                     <div class="about-desc">
+                        <p>
+                           Hard-working and self-discipline Information
+                           Technology student from the Central Luzon State
+                           University seeking an entity level as a junior web
+                           developer. Served as a peer tutor for courses such as
+                           responsive web design.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="about-skills">
+                     <!-- Skill 1 -->
+                     <div class="skill-item">
+                        <p class="label">HTML</p>
+                        <div class="parent-bar">
+                           <div class="child-bar">70%</div>
+                        </div>
+                     </div>
+                     <!-- Skill 1 -->
+                     <div class="skill-item">
+                        <p class="label">CSS</p>
+                        <div class="parent-bar">
+                           <div class="child-bar">60%</div>
+                        </div>
+                     </div>
+                     <!-- Skill 1 -->
+                     <div class="skill-item">
+                        <p class="label">JavaScript</p>
+                        <div class="parent-bar">
+                           <div class="child-bar">45%</div>
+                        </div>
+                     </div>
+                     <!-- Skill 1 -->
+                     <div class="skill-item">
+                        <p class="label">PHP</p>
+                        <div class="parent-bar">
+                           <div class="child-bar">40%</div>
+                        </div>
+                     </div>
+                     <!-- Skill 1 -->
+                     <div class="skill-item">
+                        <p class="label">Angular JS</p>
+                        <div class="parent-bar">
+                           <div class="child-bar">30%</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="projects" id="projects-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2>Projects</h2>
+               </div>
+               <div class="projects-grid">
+                  <!-- Project 1 -->
+                  <div class="project-item" id="project-item-container">
+                     <div class="project-hover" id="project-hover-modal">
+                        <button class="btn">Learn More</button>
+                     </div>
+                     <img src="images/project-1.PNG" alt="" />
+                  </div>
+               </div>
+               <!-- Project Modal -->
+               <div class="project-modal-bg">
+                  <div class="project-modal-card">
+                     <div class="project-card-img"></div>
+                     <div class="project-card-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eos voluptatem delectus placeat laboriosam illum distinctio dolor, dignissimos aut atque.</p>
+                     </div>
+                     <div class="project-card-footer">
+                        <a href="#">Link Here</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- End of Project Modal -->
+            </div>
+         </section>
+
+         <section class="contact" id="contact-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2>Contact</h2>
+                  <p>Let's work together on a project</p>
+               </div>
+               <div class="form">
+                  <form action="">
+                     <div class="form-control">
+                        <input
+                           type="text"
+                           name=""
+                           id=""
+                           placeholder="Username"
+                        />
+                     </div>
+                     <div class="form-control">
+                        <input type="email" name="" id="" placeholder="Email" />
+                     </div>
+                     <div class="form-control">
+                        <textarea
+                           name=""
+                           id=""
+                           cols="30"
+                           rows="10"
+                           placeholder="Say something about a project..."
+                        ></textarea>
+                     </div>
+                     <input type="submit" value="Send" class="btn" />
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer>
+         <div class="container">
+            <div class="icon-links">
+               <!-- Link 1 -->
+               <a href="#">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+               </a>
+               <a href="#">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+               </a>
+               <a href="#">
+                  <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+               </a>
+            </div>
+            <div class="credits">
+               <p><span>&#169</span>2020.All Rights Reserved | Portfolio by <a href="#">Nel Populi</a></p>
+            </div>
+         </div>
+      </footer>
+      <!-- Script file -->
+      <script src="js/main.js"></script>
    </body>
 </html>
