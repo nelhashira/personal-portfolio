@@ -4,12 +4,11 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Personal Portfolio</title>
-
       <!-- FOntawesome kit -->
       <script
          src="https://kit.fontawesome.com/c8c47f29f6.js"
          crossorigin="anonymous"
-      ></script>
+         ></script>
       <!-- CSS Stylesheet -->
       <link rel="stylesheet" href="css/style.css" />
    </head>
@@ -47,7 +46,6 @@
             </nav>
          </div>
       </header>
-
       <main>
          <!-- Section - Introduction for Self -->
          <section class="intro">
@@ -64,7 +62,6 @@
                </div>
             </div>
          </section>
-
          <!-- About Me section -->
          <section class="about" id="about-section">
             <div class="container">
@@ -86,7 +83,6 @@
                         </p>
                      </div>
                   </div>
-
                   <div class="about-skills">
                      <!-- Skill 1 -->
                      <div class="skill-item">
@@ -127,7 +123,6 @@
                </div>
             </div>
          </section>
-
          <section class="projects" id="projects-section">
             <div class="container">
                <div class="section-title">
@@ -137,26 +132,61 @@
                <div class="projects-grid">
                   <!-- Project 1 -->
                   <div class="project-item">
-                     <img src="https://lh3.googleusercontent.com/5ZJm-W4KcKQrUBwFS8K8KaszszCBQwz20FkqrAMCzD7-nQxsFCNaispYbjGTEHvcvRb0p7QgGgvven6IUwgv2tBYlzVoI-ARogCxs2NHWuUbgtb5JutLFbhYKXaui9ke7r9VR7zY5JxBQS5LhNEzXE1v_GABLuPISP_t42vIrnMQBJ6kXWhJ8yTj3KDVbxZOjDzmjn8d26X7C5pTEW5qsZ70UlNYbkEEVSiWDoM2rN9MaiQ6QQp5pylonDxYnYtKXKxvGrf0YMO7Uxv1UBs5vh07ks3GNYuqvpP7bw6JC6KxYLhmFNbaIXRjNoTgkMxee9UQbutblBIB_Ue1LYljv-DEELcDR0G8Q6bANxy8UBkxvo259ZTyhBy3vDfXVCu4Q6XZFbqSb_lBo_fqo_DgQ58U6ELl2MQ_sw3hxMcDonMF6ttX2ODOaoSOa_031BZBXovgZQZk3hNpe_CYqVKcmFGWC3-_ngGlw51q2gnd6lF_qHuFWBbF8WmAENuAVgSSx6XUiVbyyl16ZnVVQGi2cC33RlhQUn1qPk6VG9C9KfQXjAGzMp6QJ4FxnrmYB5an7YXaRE7pc5iTrj3ca9gqJjXG8JPraDCqJC1efZfzhIOAWx7aYV2ivxpHsOC3ypu_UQkIUPbxwNQuu2pDs1745j1LQT_54jbLyu0RMGwyv7NwvhiOn2uYygL87m8=w1208-h616-no?authuser=0" alt="">
+                     <img src="images/project-1.PNG" alt="">
                      <div class="project-desc">
-                           <h3>Rock-Paper-Scissors Game</h3>
-                           <p>HTML / CSS / JavaScript</p>
-                           <button class="btn">Learn More</button>
+                        <h3>Rock-Paper-Scissors Game</h3>
+                        <p>HTML / CSS / JavaScript</p>
+                        <button class="btn open-project-modal">Learn More</button>
                      </div>
                      <div class="overlay">
                      </div>
                   </div>
                   <!-- Project Modal -->
-                  <div class="project-modal-bg">
+                  <div class="project-modal-bg" id="project-modal">
+                     <!-- Modal -->
                      <div class="project-modal">
-
+                        <div class="slideshow-container">
+                           <!-- Image 1 -->
+                           <div class="slide">
+                              <img src="images/project-1/s1.PNG" alt="">
+                              <p>1 / 5</p>
+                           </div>
+                           <!-- Image 2 -->
+                           <div class="slide">
+                              <img src="images/project-1/s2.PNG" alt="">
+                              <p>2 / 5</p>
+                           </div>
+                           <!-- Image 3 -->
+                           <div class="slide">
+                              <img src="images/project-1/s3.PNG" alt="">
+                              <p>3 / 5</p>
+                           </div>
+                           <!-- Image 4 -->
+                           <div class="slide">
+                              <img src="images/project-1/s4.PNG" alt="">
+                              <p>4 / 5</p>
+                           </div>
+                           <!-- Image 5 -->
+                           <div class="slide">
+                              <img src="images/project-1/s5.PNG" alt="">
+                              <p>5 / 5</p>
+                           </div>
+                           <!-- Prev / Next -->
+                           <i class="fa fa-chevron-left" id="prev" aria-hidden="true"></i>
+                           <i class="fa fa-chevron-right" id="next" aria-hidden="true"></i>
+                        </div>
+                        <div class="modal-body">
+                           <p>
+                              This is my first game using javascript. It is traditional rock, paper and scissor game.
+                           </p>
+                           <a href="https://nelhashira.github.io/jak-en-poy-game/" class="btn" target="_blank">Visit website</a>
+                        </div>
                      </div>
                   </div>
                </div>
                <!-- Projects Grid Container - START  -->
             </div>
          </section>
-
          <section class="contact" id="contact-section">
             <div class="container">
                <div class="section-title">
@@ -171,7 +201,7 @@
                            name=""
                            id=""
                            placeholder="Username"
-                        />
+                           />
                      </div>
                      <div class="form-control">
                         <input type="email" name="" id="" placeholder="Email" />
@@ -183,7 +213,7 @@
                            cols="30"
                            rows="10"
                            placeholder="Say something about a project..."
-                        ></textarea>
+                           ></textarea>
                      </div>
                      <input type="submit" value="Send" class="btn" />
                   </form>
@@ -191,19 +221,18 @@
             </div>
          </section>
       </main>
-
       <footer>
          <div class="container">
             <div class="icon-links">
                <!-- Link 1 -->
                <a href="#">
-                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+               <i class="fa fa-facebook-official" aria-hidden="true"></i>
                </a>
                <a href="#">
-                  <i class="fa fa-github" aria-hidden="true"></i>
+               <i class="fa fa-github" aria-hidden="true"></i>
                </a>
                <a href="#">
-                  <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+               <i class="fa fa-google-plus-official" aria-hidden="true"></i>
                </a>
             </div>
             <div class="credits">

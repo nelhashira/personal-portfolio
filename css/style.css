@@ -400,18 +400,91 @@ nav {
    left: 0;
    right: 0;
    bottom: 0;
-   background: rgba(45, 52, 54, 0.8);
+   width: 100%;
+   height: 100%;
+   background: rgba(1, 1, 1, 0.7);
+   z-index: 88;
 }
 
 .project-modal {
-   background-color: wheat;
-   height: 25rem;
-   width: 40rem;
-   position: absolute;
+   background-color: rgba(245, 246, 250, 1);
+   width: 85vw;
+   height: auto;
+   position: relative;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
+
+.slideshow-container {
+   background-color: blue;
+   position: relative;
+   height: 15rem;
+}
+
+.slide {
+   display: none;
+   height: 100%;
+}
+
+.slideshow-container p {
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
+   font-size: 0.8rem;
+   color: rgba(245, 246, 250, 0.5);
+}
+
+.slideshow-container > i {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   color: rgba(245, 246, 250, 0.5);
+   font-size: 2rem;
+   padding: 0.5rem;
+   user-select: none;
+}
+
+.slideshow-container > i:hover {
+   color: rgba(245, 246, 250, 1);
+}
+
+.fa-chevron-left {
+   left: 1rem;
+}
+.fa-chevron-right {
+   right: 1rem;
+}
+
+.slide img {
+   height: 100%;
+   object-fit: cover;
+}
+
+.modal-body {
+   height: calc(100% - 65%);
+   /* background-color: red; */
+   /* overflow: hidden; */
+   padding: 1rem;
+}
+
+.modal-body p {
+   font-size: 1.1rem;
+}
+
+.modal-body .btn {
+   display: inline-block;
+   margin-top: 2rem;
+   color: rgba(0, 0, 0, 0.9);
+   background-color: rgba(254, 202, 87, 0.9);
+   outline: none;
+   border: none;
+   font-size: 1rem;
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
 /* Section Projects - END */
 
 /* Section COntacts - START */
@@ -538,6 +611,18 @@ footer {
    .about-img {
       height: 12rem;
       width: 12rem;
+   }
+
+   .project-modal {
+      width: 60vw;
+   }
+
+   .slideshow-container {
+      height: 20rem;
+   }
+
+   .slideshow-container p {
+      font-size: 1rem;
    }
 
    .form {
