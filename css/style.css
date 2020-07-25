@@ -18,6 +18,8 @@ body {
    font-size: 10px;
    line-height: 1.6;
    text-align: center;
+   height: 100%;
+   width: 100%;
 }
 
 p {
