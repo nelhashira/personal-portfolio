@@ -145,7 +145,8 @@ nav {
          rgba(12, 36, 97, 0.9) 0%,
          rgba(52, 152, 219, 0.8) 100%
       ),
-      url("../images/adult-alone-blur-close-up-1172207.jpg") center no-repeat;
+      url("https://lh3.googleusercontent.com/Zo-f3DsoC7XtuGma6alqF1nO3f0a-b-o-_aQ1fiexJQpZFkhTcmLbJfOl77FeI__B_QudZbZjsEW-SVxA33JnZEIM6V5c3dVd-OI2Rd6oTR_wlz8f6ynSO4b_ZSan_eTLAI76nuw_TyVXODfiUsI3tKGvqUR9OT9zc9O6hBxGRbuX5y9Bjkb8Rgv_BotNCSN0ooMWBQT4JgG7P0qizhtb-0PVnbAhmwgfZRaDB-LZGO3Hcb7VeJMvTuZp9Pc9M2me2e67UErUmA7f8CH5oTvlTuFDt0eXIcTCA_Cx0vtgusgTFE9vitZ3CxzTZItVsrW4z1d6KeMsnIUvVtcWq7nZDLkGGYS4lN87BvwNSWh2HL9ne7Fgr_bsfY7NDnoiXpOPGVYbSx1SWl8PtlBG61w2nDJzkdyqYcqulkd6HLEc7_9979FdaXwdCBFZbmffAj3Nf_ANG8pJnVmfl1RQoKK5EPtaDJKqJW6fhwyGL57q154XGzzs6hBgXjoHfwucC2l_YvwP0Qi7Hb52Bgtrd9UMhtoObsEWJiiHIr32CF5mXz1TIJSN3UbR0Rtq-Ij6bzOVXHrUdl6NsLiADsWckGxAEvCo5ZWtJB8hQkIGMV63iIgud5dY2ufsBYdwY14uvv0yWQATNARWGukI-Wy6So8gbb8xPfqDGzEHUDf9x8f4cvzYHJJ921wxoh1bF0=w926-h616-no?authuser=0")
+         center no-repeat;
    background-size: cover;
    z-index: -1;
 }
@@ -292,25 +293,6 @@ nav {
 .skill-item:nth-child(5) > .parent-bar .child-bar {
    width: 15%;
 }
-
-.project-modal-bg {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background: rgba(45, 52, 54, 0.8);
-}
-
-.project-modal {
-   background-color: wheat;
-   height: 25rem;
-   width: 40rem;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
 /* Section About & Skills - END */
 
 /* Section Projects - START */
@@ -321,7 +303,7 @@ nav {
          rgba(12, 36, 97, 0.9),
          rgba(52, 152, 219, 0.8)
       ),
-      url("https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+      url("https://lh3.googleusercontent.com/Zo-f3DsoC7XtuGma6alqF1nO3f0a-b-o-_aQ1fiexJQpZFkhTcmLbJfOl77FeI__B_QudZbZjsEW-SVxA33JnZEIM6V5c3dVd-OI2Rd6oTR_wlz8f6ynSO4b_ZSan_eTLAI76nuw_TyVXODfiUsI3tKGvqUR9OT9zc9O6hBxGRbuX5y9Bjkb8Rgv_BotNCSN0ooMWBQT4JgG7P0qizhtb-0PVnbAhmwgfZRaDB-LZGO3Hcb7VeJMvTuZp9Pc9M2me2e67UErUmA7f8CH5oTvlTuFDt0eXIcTCA_Cx0vtgusgTFE9vitZ3CxzTZItVsrW4z1d6KeMsnIUvVtcWq7nZDLkGGYS4lN87BvwNSWh2HL9ne7Fgr_bsfY7NDnoiXpOPGVYbSx1SWl8PtlBG61w2nDJzkdyqYcqulkd6HLEc7_9979FdaXwdCBFZbmffAj3Nf_ANG8pJnVmfl1RQoKK5EPtaDJKqJW6fhwyGL57q154XGzzs6hBgXjoHfwucC2l_YvwP0Qi7Hb52Bgtrd9UMhtoObsEWJiiHIr32CF5mXz1TIJSN3UbR0Rtq-Ij6bzOVXHrUdl6NsLiADsWckGxAEvCo5ZWtJB8hQkIGMV63iIgud5dY2ufsBYdwY14uvv0yWQATNARWGukI-Wy6So8gbb8xPfqDGzEHUDf9x8f4cvzYHJJ921wxoh1bF0=w926-h616-no?authuser=0")
          center no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -409,6 +391,26 @@ nav {
 
 .project-item:hover .overlay {
    opacity: 1;
+}
+
+.project-modal-bg {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(45, 52, 54, 0.8);
+}
+
+.project-modal {
+   background-color: wheat;
+   height: 25rem;
+   width: 40rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 /* Section Projects - END */
 
