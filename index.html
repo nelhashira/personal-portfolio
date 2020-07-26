@@ -3,25 +3,30 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Personal Portfolio</title>
-      <!-- FOntawesome kit -->
+      <title>Document</title>
+
+      <!-- Fontawesome kit -->
       <script
          src="https://kit.fontawesome.com/c8c47f29f6.js"
          crossorigin="anonymous"
-         ></script>
-      <!-- CSS Stylesheet -->
+      ></script>
+      <!-- My stylesheet -->
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
+      <!-- Header -->
       <header>
          <div class="container">
             <nav>
+               <!-- my logo -->
                <div class="nav-brand">
                   <i>jPopuli</i>
                </div>
+               <!-- Burger menu -->
                <div class="nav-menu open" id="toggle-open">
                   <i class="fa fa-bars"></i>
                </div>
+               <!-- Navigation bar (links) -->
                <ul class="nav-bar-links" id="nav-bar-open">
                   <div class="nav-menu close" id="toggle-close">
                      <i class="fa fa-times"></i>
@@ -46,8 +51,11 @@
             </nav>
          </div>
       </header>
+      <!-- END Header -->
+
+      <!-- MAIN -->
       <main>
-         <!-- Section - Introduction for Self -->
+         <!-- Section 1 - Introduction -->
          <section class="intro">
             <div class="container">
                <div class="intro-message">
@@ -56,65 +64,67 @@
                      <span>Nel Populi</span><br />I design & build web
                      applications
                   </h1>
+                  <!-- View projects Button -->
                </div>
-               <div class="intro-btn">
+               <div class="view-projects">
                   <a href="#projects-section" class="btn">See my projects</a>
                </div>
             </div>
          </section>
-         <!-- About Me section -->
+         <!-- END of SECTION 1 -->
+
+         <!-- Section 2 - About Myself -->
          <section class="about" id="about-section">
             <div class="container">
                <div class="section-title">
                   <h2>About</h2>
                </div>
-               <div class="about-grid">
+               <div class="about-flex">
+                  <!-- Description for myself -->
                   <div class="about-info">
                      <div class="about-img">
-                        <img src="https://lh3.googleusercontent.com/_YAItaOGsNQqGcL9kSG0RViGALKu3L2GLtV25VNbFbqz8X6S8PEl0rBsXOCJgaetedShuMPbJCrVE-HP7GT6-3g2BXIHASNDN45ao_X07k1KwVRVTr7S3FG51ZU1EidUPfjXzh4KwGEML4wU9W7cHWJL-kfL9JwwG_Bkna_x-eWKOXnJvz2M9itF5uHsw1exTLXLefO_jIVj2CTnzhBx1RW4DPoYyzQMOCTmxEsw80bohYBXQh4-HpBUXNKnZY74j3oL-IJ5ka558J62MBh1zdv6IMpmpZmB9CZNnuTm6YicqGsuwZlh_rIa1AFZMBcGI8GpjP3ieRrQNidnzSC4I84d4age51nsRTjvNQcft9nkHhgTAOLHeXT6TnR1dcAG_5IU7eRqODYgPFLKr6y_Y24c5NRdZipKVwffc7QTr-Zdg6vz4ddJyljq5r3jhd_4YowCftx-H_50WGVXoH9S_c8zT7oz-XyLFSc8U7EhAA7hAhNyQnmY9Lkust3AazE0kMDVsoLqvo3nkBCTxfIAh8jV4YvZt4LEchqVX_uqo0fHHTOE_BoxFWAODCU3YcoD5C5Iqi5ABv8Vk1vQxb6L6qm6kMVVlGC1X2CFRP4D680m2MsZkBm51v7zQ0XX3ur_pbu5X5UXKZi7jPB2Kk57EcRZYHytly0FTOolzr8jJrkOg_ti6hLx7UuPvQI=s512-no?authuser=0" alt="" />
+                        <img src="images/educator.png" alt="" />
                      </div>
-                     <div class="about-desc">
-                        <p>
-                           Hard-working and self-discipline Information
-                           Technology student from the Central Luzon State
-                           University seeking an entity level as a junior web
-                           developer. Served as a peer tutor for courses such as
-                           responsive web design.
-                        </p>
-                     </div>
+                     <p>
+                        Hard-working and self-discipline Information Technology
+                        student from the Central Luzon State University seeking
+                        an entity level as a junior web developer. Served as a
+                        peer tutor for courses such as responsive web design.
+                     </p>
                   </div>
+                  <!-- My skills -->
                   <div class="about-skills">
                      <!-- Skill 1 -->
                      <div class="skill-item">
-                        <p class="label">HTML</p>
+                        <p>HTML</p>
                         <div class="parent-bar">
                            <div class="child-bar">60%</div>
                         </div>
                      </div>
                      <!-- Skill 1 -->
                      <div class="skill-item">
-                        <p class="label">CSS</p>
+                        <p>CSS</p>
                         <div class="parent-bar">
                            <div class="child-bar">40%</div>
                         </div>
                      </div>
                      <!-- Skill 1 -->
                      <div class="skill-item">
-                        <p class="label">JavaScript</p>
+                        <p>JavaScript</p>
                         <div class="parent-bar">
                            <div class="child-bar">30%</div>
                         </div>
                      </div>
                      <!-- Skill 1 -->
                      <div class="skill-item">
-                        <p class="label">PHP</p>
+                        <p>PHP</p>
                         <div class="parent-bar">
                            <div class="child-bar">30%</div>
                         </div>
                      </div>
                      <!-- Skill 1 -->
                      <div class="skill-item">
-                        <p class="label">Angular JS</p>
+                        <p>Angular JS</p>
                         <div class="parent-bar">
                            <div class="child-bar">15%</div>
                         </div>
@@ -123,124 +133,9 @@
                </div>
             </div>
          </section>
-         <section class="projects" id="projects-section">
-            <div class="container">
-               <div class="section-title">
-                  <h2>Projects</h2>
-               </div>
-               <!-- Projects Grid Container - START  -->
-               <div class="projects-grid">
-                  <!-- Project 1 -->
-                  <div class="project-item">
-                     <img src="images/project-1.PNG" alt="">
-                     <div class="project-desc">
-                        <h3>Rock-Paper-Scissors Game</h3>
-                        <p>HTML / CSS / JavaScript</p>
-                        <button class="btn open-project-modal">Learn More</button>
-                     </div>
-                     <div class="overlay">
-                     </div>
-                  </div>
-                  <!-- Project Modal -->
-                  <div class="project-modal-bg" id="project-modal">
-                     <!-- Modal -->
-                     <div class="project-modal">
-                        <div class="slideshow-container">
-                           <!-- Image 1 -->
-                           <div class="slide">
-                              <img src="images/project-1/s1.PNG" alt="">
-                              <p>1 / 5</p>
-                           </div>
-                           <!-- Image 2 -->
-                           <div class="slide">
-                              <img src="images/project-1/s2.PNG" alt="">
-                              <p>2 / 5</p>
-                           </div>
-                           <!-- Image 3 -->
-                           <div class="slide">
-                              <img src="images/project-1/s3.PNG" alt="">
-                              <p>3 / 5</p>
-                           </div>
-                           <!-- Image 4 -->
-                           <div class="slide">
-                              <img src="images/project-1/s4.PNG" alt="">
-                              <p>4 / 5</p>
-                           </div>
-                           <!-- Image 5 -->
-                           <div class="slide">
-                              <img src="images/project-1/s5.PNG" alt="">
-                              <p>5 / 5</p>
-                           </div>
-                           <!-- Prev / Next -->
-                           <i class="fa fa-chevron-left" id="prev" aria-hidden="true"></i>
-                           <i class="fa fa-chevron-right" id="next" aria-hidden="true"></i>
-                        </div>
-                        <div class="modal-body">
-                           <p>
-                              This is my first game using javascript. It is traditional rock, paper and scissor game.
-                           </p>
-                           <a href="https://nelhashira.github.io/jak-en-poy-game/" class="btn" target="_blank">Visit website</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Projects Grid Container - START  -->
-            </div>
-         </section>
-         <section class="contact" id="contact-section">
-            <div class="container">
-               <div class="section-title">
-                  <h2>Contact</h2>
-                  <p>Let's work together on a project</p>
-               </div>
-               <div class="form">
-                  <form action="">
-                     <div class="form-control">
-                        <input
-                           type="text"
-                           name=""
-                           id=""
-                           placeholder="Username"
-                           />
-                     </div>
-                     <div class="form-control">
-                        <input type="email" name="" id="" placeholder="Email" />
-                     </div>
-                     <div class="form-control">
-                        <textarea
-                           name=""
-                           id=""
-                           cols="30"
-                           rows="10"
-                           placeholder="Say something about a project..."
-                           ></textarea>
-                     </div>
-                     <input type="submit" value="Send" class="btn" />
-                  </form>
-               </div>
-            </div>
-         </section>
+         <!-- END of SECTION 2 -->
       </main>
-      <footer>
-         <div class="container">
-            <div class="icon-links">
-               <!-- Link 1 -->
-               <a href="#">
-               <i class="fa fa-facebook-official" aria-hidden="true"></i>
-               </a>
-               <a href="#">
-               <i class="fa fa-github" aria-hidden="true"></i>
-               </a>
-               <a href="#">
-               <i class="fa fa-google-plus-official" aria-hidden="true"></i>
-               </a>
-            </div>
-            <div class="credits">
-               <p><span>&#169</span>2020.All Rights Reserved | Portfolio by <a href="#">Nel Populi</a></p>
-            </div>
-         </div>
-      </footer>
-      <!-- Script file -->
+      <!-- END Main -->
       <script src="js/main.js"></script>
    </body>
 </html>

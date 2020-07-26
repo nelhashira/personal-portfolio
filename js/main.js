@@ -62,4 +62,5 @@ const slideShow = (index) => {
    }
    slides[slideIndex - 1].style.display = "block";
 };
+
 slideShow(slideIndex);
