@@ -34,7 +34,7 @@ const myModal = selectElement("#project-modal");
 // Open Project Modal
 toggleModal.forEach((btn) => {
    btn.addEventListener("click", () => {
-      myModal.style.display = "block";
+      myModal.style.display = "flex";
    });
 });
 
