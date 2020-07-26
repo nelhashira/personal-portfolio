@@ -10,9 +10,22 @@ toggleOpen.addEventListener("click", () => {
    navBar.classList.add("toggle");
 });
 
+const close = () => {
+   navBar.classList.remove("toggle");
+};
+
 // Toggle close on click
 toggleCLose.addEventListener("click", () => {
-   navBar.classList.remove("toggle");
+   close();
+});
+
+// Close sidebar after clicking the links
+const links = selectElementAll(".nav-link");
+
+links.forEach((link) => {
+   link.addEventListener("click", () => {
+      close();
+   });
 });
 
 const toggleModal = selectElementAll(".open-project-modal");
