@@ -12,7 +12,6 @@
 
 html {
    scroll-behavior: smooth;
-   font-size: 10px;
 }
 
 body {
@@ -67,13 +66,6 @@ section {
    padding: 5rem 0;
 }
 
-input,
-textarea {
-   display: block;
-   width: 100%;
-   margin: 0 auto;
-}
-
 /* -------------------- NAVBAR SECTION --------------------  */
 header {
    position: fixed;
@@ -91,9 +83,9 @@ nav {
 
 .nav-brand i,
 .nav-menu i {
+   font-size: 1.8rem;
    color: rgba(250, 250, 250, 1);
    cursor: pointer;
-   font-size: 3rem;
 }
 
 .nav-brand i {
@@ -135,10 +127,6 @@ nav {
    transition: 500ms ease-in-out;
 }
 
-.nav-item a {
-   font-size: 1.75rem;
-}
-
 .nav-item:hover {
    border-color: rgba(254, 202, 87, 1);
 }
@@ -146,14 +134,6 @@ nav {
 /* -------------------- END of NAVBAR --------------------  */
 
 /* -------------------- SECTION 1 - INTRODUCTION --------------------  */
-.section-title {
-   margin-bottom: 2.5rem;
-}
-.section-title h2 {
-   font-weight: 500;
-   font-size: 2.5rem;
-}
-
 .intro {
    height: 100vh;
    background: linear-gradient(
@@ -182,25 +162,17 @@ nav {
    font-weight: 500;
 }
 
-.intro-message h1 {
-   font-size: 3rem;
-}
-
-.intro-message h2 {
-   font-size: 2rem;
-}
-
 .intro-message span {
    color: rgba(254, 202, 87, 1);
 }
 
 .view-projects {
-   margin-top: 5rem;
+   margin-top: 3rem;
 }
 .view-projects .btn {
    background-color: rgba(254, 202, 87, 1);
+   font-size: 0.8rem;
    color: rgba(45, 52, 54, 1);
-   font-size: 1.25rem;
 }
 
 .view-projects .btn:hover {
@@ -209,89 +181,7 @@ nav {
 /* -------------------- END of INTRODUCTION --------------------  */
 
 /* -------------------- SECTION 2 - ABOUT MYSELF --------------------  */
-.about-details {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   justify-content: center;
-   align-items: center;
-}
 
-.about-img {
-   background-color: rgba(45, 52, 54, 1);
-   height: 15rem;
-   width: 15rem;
-   margin: 0 auto;
-}
-
-.about-img {
-   height: 100%;
-}
-
-.about-desc p {
-   margin: 1rem;
-   font-size: 1.5rem;
-}
-
-.skills-section {
-   margin-top: 5rem;
-}
-
-.skills-section .section-title h3 {
-   font-weight: 400;
-   font-size: 2rem;
-}
-
-.skills {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   grid-gap: 2rem;
-}
-
-.skill-item {
-   width: 100%;
-}
-
-.skill-item p {
-   margin-bottom: 0.75rem;
-   font-size: 1.5rem;
-   text-align: left;
-}
-
-.parent {
-   height: 2.25rem;
-   width: 100%;
-   background-color: rgba(45, 52, 54, 0.1);
-   overflow: hidden;
-}
-
-.child {
-   background-color: rgba(52, 152, 219, 0.8);
-   color: rgba(45, 52, 54, 0.9);
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.skill-item:nth-child(1) .parent .child {
-   width: 60%;
-}
-
-.skill-item:nth-child(2) .parent .child {
-   width: 50%;
-}
-
-.skill-item:nth-child(3) .parent .child {
-   width: 40%;
-}
-
-.skill-item:nth-child(4) .parent .child {
-   width: 20%;
-}
-
-.skill-item:nth-child(5) .parent .child {
-   width: 45%;
-}
 /* -------------------- END of ABOUT MYSELF --------------------  */
 
 /* -------------------- SECTION 2 - PROJECTS --------------------  */
@@ -312,11 +202,12 @@ nav {
 
 .projects-grid {
    display: grid;
-   grid-gap: 2rem;
+   grid-template-columns: 1fr;
+   grid-gap: 1rem;
 }
 
 .project-item {
-   height: 20rem;
+   height: 12rem;
    margin-bottom: 1rem;
    overflow: hidden;
    position: relative;
@@ -361,23 +252,24 @@ nav {
    transform: translateY(6rem);
    transition: 500ms;
    z-index: 3;
+   font-size: 1rem;
 }
 
 .project-body h3 {
    color: rgba(254, 202, 87, 1);
+   font-size: 1rem;
    font-weight: 500;
-   font-size: 1.75rem;
 }
 
 .project-body p {
    color: rgba(250, 250, 250, 1);
    margin: 0.75rem 0 1.5rem;
-   font-size: 1.2rem;
+   font-size: 0.75rem;
 }
 
 .project-body button {
+   font-size: 0.75rem;
    padding: 0.5rem 0.75rem;
-   font-size: 1.3rem;
 }
 
 .project-item:hover .project-body {
@@ -402,8 +294,8 @@ nav {
 }
 
 .project-modal {
-   height: 25rem;
-   width: 25rem;
+   height: 20rem;
+   width: 18rem;
    background-color: rgba(250, 250, 250, 1);
    display: grid;
    grid-template-rows: 2fr 1fr;
@@ -422,6 +314,7 @@ nav {
    padding: 1rem;
    display: grid;
    grid-row-gap: 1.5rem;
+   font-size: 0.8rem;
 }
 
 .modal-body a {
@@ -440,6 +333,7 @@ nav {
    top: 1rem;
    left: 1rem;
    color: rgba(250, 250, 250, 0.5);
+   font-size: 0.6rem;
 }
 
 .fa-chevron-left,
@@ -448,6 +342,7 @@ nav {
    top: 50%;
    transform: translateY(-50%);
    color: rgba(250, 250, 250, 0.7);
+   font-size: 1rem;
    cursor: pointer;
 }
 
@@ -462,87 +357,6 @@ nav {
 /* -------------------- END of PROJECTS --------------------  */
 
 /* -------------------- SECTION 1 - CONTACT --------------------  */
-/* .left {
-   background-color: pink;
-}
-
-.right {
-   background-color: skyblue;
-} */
-
-.contact-details {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   grid-gap: 2rem;
-}
-
-.left {
-   display: grid;
-   grid-row-gap: 3rem;
-}
-
-.left p {
-   font-size: 1.5rem;
-}
-
-.contact-info {
-   display: grid;
-   grid-row-gap: 1rem;
-   justify-content: center;
-}
-
-.contact-item {
-   display: grid;
-   grid-template-columns: 5rem 1fr;
-}
-
-.contact-item i {
-   font-size: 1.9rem;
-   color: rgba(52, 152, 219, 1);
-}
-
-.contact-item p {
-   text-align: left;
-}
-
-.contact-icons {
-   display: flex;
-   justify-content: center;
-}
-
-.contact-icons .link {
-   margin: 0 0.5rem 0;
-}
-
-.contact-icons i {
-   font-size: 3rem;
-   cursor: pointer;
-}
-
-input,
-textarea {
-   font-family: inherit;
-   font-size: 1.5rem;
-   padding: 0.5rem;
-   outline: none;
-   border: 1px solid rgba(52, 152, 219, 1);
-   border-radius: 4px;
-}
-
-.form-control {
-   margin-bottom: 1rem;
-}
-
-input[type="submit"] {
-   background-color: rgba(52, 152, 219, 1);
-   color: rgba(250, 250, 250, 1);
-   width: auto;
-   margin: 0;
-}
-
-.right .section-title h2 {
-   font-size: 2rem;
-}
 
 /* -------------------- END of CONTACT --------------------  */
 
@@ -558,8 +372,13 @@ footer {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 1.5rem;
-   color: rgba(250, 250, 250, 1);
+}
+
+.links-flex {
+   /* display content */
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 footer a {
@@ -570,6 +389,9 @@ footer a {
 footer p {
    margin-top: 1rem;
 }
+.links-flex i {
+   font-size: 1.5rem;
+}
 /* -------------------- END of FOOTER --------------------  */
 
 /* -------------------- MEDIA QUERIES --------------------  */
@@ -578,19 +400,26 @@ footer p {
 @media only screen and (max-width: 480px) {
    .container {
       max-width: 400px;
-      /* background-color: transparent; */
    }
 }
 
 /* Extra small devices (phones, 480px and up) */
 @media only screen and (min-width: 480px) {
    .container {
-      max-width: 430px;
-      /* background-color: transparent; */
+      max-width: 500px;
+      background-color: green;
    }
 
-   .project-modal {
-      width: 30rem;
+   .intro-message h1 {
+      font-size: 2.5rem;
+   }
+
+   .intro-message h2 {
+      font-size: 1.3rem;
+   }
+
+   .project-item {
+      height: 15rem;
    }
 }
 
@@ -598,12 +427,23 @@ footer p {
 @media only screen and (min-width: 600px) {
    .container {
       max-width: 520px;
-      /* background-color: paleturquoise; */
+   }
+
+   .intro-message h1 {
+      font-size: 2.5rem;
+   }
+
+   .intro-message h2 {
+      font-size: 1.3rem;
+   }
+
+   .project-item {
+      height: 15rem;
    }
 
    .project-modal {
-      height: 30rem;
-      width: 35rem;
+      height: 25rem;
+      width: 30rem;
    }
 }
 
@@ -613,47 +453,54 @@ footer p {
       max-width: 640px;
    }
 
-   .nav-menu i {
-      display: none;
+   .intro-message h1 {
+      font-size: 3.5rem;
+      font-weight: 500;
+   }
+
+   .intro-message h2 {
+      font-size: 2rem;
+      font-weight: 400;
+   }
+
+   nav {
+      padding: 1rem 0;
    }
 
    .nav-bar-links {
       width: initial;
       height: initial;
-      position: static;
+      position: initial;
       background-color: initial;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
    }
 
-   .intro-message h1 {
-      font-size: 4rem;
+   .open,
+   .close {
+      display: none;
    }
 
-   .about-details {
-      flex-direction: row;
-   }
-
-   .skills-section .section-title h3 {
-      text-align: left;
+   .nav-item {
+      margin: 0;
+      padding: 0;
    }
 
    .projects-grid {
       grid-template-columns: repeat(2, 1fr);
    }
 
+   .project-item {
+      width: 100%;
+      height: 14rem;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
    .project-modal {
-      height: 35rem;
+      height: 28rem;
       width: 40rem;
-   }
-
-   .project-body p {
-      font-size: 1.75rem;
-   }
-
-   .right {
-      margin: auto;
-      max-width: 60rem;
    }
 }
 
@@ -661,11 +508,6 @@ footer p {
 @media only screen and (min-width: 992px) {
    .container {
       max-width: 800px;
-      /* background-color: pink; */
-   }
-
-   .project-modal {
-      width: 45rem;
    }
 }
 
@@ -673,56 +515,17 @@ footer p {
 @media only screen and (min-width: 1200px) {
    .container {
       max-width: 1000px;
-      /* background-color: yellowgreen; */
-   }
-
-   .intro-message h1 {
-      font-size: 6rem;
-   }
-
-   .intro-message h2 {
-      font-size: 3rem;
-   }
-
-   .view-projects .btn {
-      font-size: 1.75rem;
    }
 
    .section-title h2 {
-      font-size: 3.5rem;
+      font-size: 1.9rem;
    }
 
-   .about-img {
-      height: 20rem;
-      width: 20rem;
-   }
-
-   .about-desc p {
-      font-size: 1.75rem;
-   }
-
-   .skill-item p {
-      font-size: 1.75rem;
-   }
-
-   .skill-item p {
-      font-size: 1.75;
-   }
-
-   .parent {
-      height: 2.5rem;
+   .section-title p {
+      font-size: 1rem;
    }
 
    .projects-grid {
       grid-template-columns: repeat(3, 1fr);
-   }
-
-   .project-modal {
-      width: 50rem;
-      height: 40rem;
-   }
-
-   .contact-details p {
-      font-size: 1.75rem;
    }
 }
